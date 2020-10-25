@@ -34,20 +34,20 @@ ii) multiple port ------> Checked only for ports 20 to 25, But telnet port 23 is
 Among 6 portions of code Only 4 are done:
 
 response = 1-1-2 ---> Single - TCP - PortSCanner ------> 1.  Detects Open port
-												 ------> 2.  Detects closed port
-												 ------> 3.  Unable to Detect Filtered port
-												 ------> 4.  Performs Host discovery
+						 ------> 2.  Detects closed port
+						 ------> 3.  Unable to Detect Filtered port
+						 ------> 4.  Performs Host discovery
 
 
-response = 1-2 -----> Single - BannerGrabber      ------> 1. Only Detects Open ports from which banner can be grabbed among open, closed and filtered
-												  ------> 2. Performs Host discovery
+response = 1-2 -----> Single - BannerGrabber     ------> 1. Only Detects Open ports from which banner can be grabbed among open, closed and filtered
+						 ------> 2. Performs Host discovery
 
 
 
 response = 2-1-2 ---> Multiple - TCP - PortSCanner ------> 1. Shows only open ports
-												   ------> 2. Assumes closed and filtered port to be same
-												   ------> 3. Performs Host discovery
+						   ------> 2. Assumes closed and filtered port to be same
+						   ------> 3. Performs Host discovery
 
 
 response = 2-2 -----> Multiple - BannerGrabber     ------> 1. Assumes closed and filtered port and prohibited for ports for banner grabbing to be same
-												   ------> 2. Performs Host discovery
+						   ------> 2. Performs Host discovery
